@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em 2em 0.5em 2em;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+.first-part{
+   animation: a-motion 3s linear 1s 1 normal forwards; 
+   color: white;
+   font-style: bold;
+   font-family: 'Dancing Script', cursive;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Serif', serif;
+  font-family: 'Square Peg', cursive;
+ font-size: 4rem;
+   
+}
+.second-part{
+    animation: two-motion 3s linear 1s 1 normal forwards; 
+    color: white;
+    font-style: bold;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Inconsolata', monospace;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Serif', serif;
+font-family: 'Square Peg', cursive;
+    font-size: 4rem;
+
+  
+ }
+ .third-part{
+    animation: z-motion 3s linear 1s 1 normal forwards; 
+    color: white;
+     font-style: bold;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Inconsolata', monospace;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Serif', serif;
+font-family: 'Square Peg', cursive;
+    font-size: 4rem;
+   
+ }
+ 
+
+@keyframes a-motion {
+    0%{
+      transform: translateX(0px);  
+    }
+
+    100%{
+        transform: translateX(680px);
+    }   
+}
+@keyframes two-motion {
+    0%{
+      transform: translateY(-50px);  
+    }
+
+    100%{
+        transform: translateY(0px);  
+    }   
+}
+@keyframes z-motion {
+    0%{
+      transform: translateX(0px);  
+    }
+
+    100%{
+        transform: translateX(-680px);
+    }   
+}
+.descrip{
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Serif', serif;
+    font-family: 'Square Peg', cursive;
+  
+}
