@@ -1,0 +1,24 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "a to-do-list project to organize your day",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "build": "npx webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zikaloai71/TO-DO-LIST.git"
+  },
+  "author": "zakaria loai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zikaloai71/TO-DO-LIST/issues"
+  },
+  "homepage": "https://github.com/zikaloai71/TO-DO-LIST#readme",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
