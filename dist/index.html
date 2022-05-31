@@ -17,6 +17,28 @@
         <p class="third-part">Z</p>
         <h1 class="descrip">ToDoList</h1>
     </header>
+    <main> 
+        <p class="instruction">press <button id="todo">+</button> to add new todo</p>
+    </main>
+<section class="form-part">
+    <form class="display-none" id="todo-form" >
+        <label>TITLE</label>
+        <input type="text" id="title">
+        <label>DESCRIPTION</label>
+        <input type="text" id="description">
+        <label>DUE-DATE</label>
+        <input type="date" id="due-date">
+        <label>PRIORITY :</label>
+        <select id="priority-level">
+            <option value="red">RED (critical)</option>
+            <option value="blue">BLUE (intermediate)</option>
+            <option value="green">GREEN (low)</option>
+         </select>
+         <button id="submit">add a to-do</button>
+    </form>
+    <img src="./download.jfif" alt="to do list and coffee drink">
+</section>
+   
     <script src="./main.js"></script>
 </body>
 </html>

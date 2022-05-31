@@ -15,7 +15,7 @@
 .first-part{
    animation: a-motion 3s linear 1s 1 normal forwards; 
    color: white;
-   font-style: bold;
+   font-weight: bold;
    font-family: 'Dancing Script', cursive;
   font-family: 'Inconsolata', monospace;
   font-family: 'Roboto', sans-serif;
@@ -27,7 +27,7 @@
 .second-part{
     animation: two-motion 3s linear 1s 1 normal forwards; 
     color: white;
-    font-style: bold;
+    font-weight: bold;
     font-family: 'Dancing Script', cursive;
 font-family: 'Inconsolata', monospace;
 font-family: 'Roboto', sans-serif;
@@ -40,7 +40,7 @@ font-family: 'Square Peg', cursive;
  .third-part{
     animation: z-motion 3s linear 1s 1 normal forwards; 
     color: white;
-     font-style: bold;
+    font-weight: bold;
     font-family: 'Dancing Script', cursive;
 font-family: 'Inconsolata', monospace;
 font-family: 'Roboto', sans-serif;
@@ -90,3 +90,88 @@ font-family: 'Square Peg', cursive;
     font-family: 'Square Peg', cursive;
   
 }
+#todo{
+    width:50px;
+    height: 50px;
+    color: white;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 0px;
+    cursor: pointer;
+   margin-left: 0.1em;
+   margin-top: 0.1em;
+   background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgb(53, 46, 48) 100%);
+}
+main{
+    margin-top: 2em;
+    margin-left: 3em;
+}
+.instruction{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Serif', serif;
+    font-size: 2rem;
+    
+
+}
+
+.form-part{
+    display: flex;
+    margin-top: 2em;
+    margin-left: 3em;
+    justify-content: space-around;
+    align-items: center;
+    align-content:center;
+}
+img{
+    width: 30%;
+    border-radius: 10px;
+    
+}
+#todo-form{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 50%;
+    }
+
+input{
+        width: 80%;
+        background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+       color: white;
+        outline: none;
+        border: 0px;
+        padding: 1em;
+        border-radius: 10px;
+    }
+label{
+        margin-bottom: 0.5em;
+        margin-top: 1em;
+        color:black;
+        font-weight: bold;
+        font-family: 'Inconsolata', monospace;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Serif', serif;
+    
+    }
+    #submit{
+        margin-top: 1em;
+        width:30%;
+        margin-left: 50%;
+        background-color: rgb(156, 235, 156);
+        outline: none;
+        border: 0px;
+        padding: 1em;
+        border-radius: 10px;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-family: 'Inconsolata', monospace;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Serif', serif;
+        cursor: pointer;
+    
+     }
+     
