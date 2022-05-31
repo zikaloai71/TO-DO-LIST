@@ -129,6 +129,10 @@ img{
     border-radius: 10px;
     
 }
+.display-none{
+    display: none !important;
+
+}
 #todo-form{
     display: flex;
     flex-direction: column;
@@ -156,7 +160,40 @@ label{
         font-family: 'Roboto Serif', serif;
     
     }
-    #submit{
+#priority-level{
+    width: 80%;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    outline: none;
+    border: 0px;
+    padding: 1em;
+    border-radius: 10px;
+}
+option{
+    outline: none;
+    border: 0px;
+    border-radius: 10px;
+    padding: 1em;
+}
+option[value="red"]{
+    background-color: #FF3636;
+}
+option[value="green"]{
+    background-color: #1C7A22;
+}
+option[value="blue"]{
+    background-color: #282A7A;
+}
+option[value="red"]:hover{
+    background-color: #FF3636;
+}
+option[value="green"]:hover{
+    background-color: #1C7A22;
+}
+option[value="blue"]:hover{
+    background-color: #282A7A;
+}
+#submit{
         margin-top: 1em;
         width:30%;
         margin-left: 50%;
@@ -174,4 +211,55 @@ label{
         cursor: pointer;
     
      }
-     
+    
+ul{
+        margin-top: 1em;
+       
+    }
+li{  display: flex;
+        justify-content: space-between;
+        width: 95%;
+       margin:1em auto;
+       padding: 1em;
+       border-radius: 10px;
+    }
+li p {
+        display:flex;
+        flex-direction: column;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-family: 'Inconsolata', monospace;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Serif', serif;
+    }
+aside{
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+    }
+
+.edit{
+    width: 30%;  
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: rgb(128, 85, 0);
+    border-radius: 10px;
+}
+.delete{
+    width: 30%;  
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: rgb(171, 80, 80);
+    border-radius: 10px;
+}
+.complete{
+    width: 30%;  
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: rgb(108, 195, 108);
+    border-radius: 10px;
+}

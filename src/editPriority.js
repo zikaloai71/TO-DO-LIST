@@ -1,4 +1,4 @@
-function editPriority (){
+function editPriority (set){
 let lists=[...document.querySelectorAll('.lists')];
 let edit =[...document.querySelectorAll(".edit")];
 
