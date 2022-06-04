@@ -174,16 +174,24 @@ option{
     border: 0px;
     border-radius: 10px;
     padding: 1em;
+    font-weight: bold;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Serif', serif;
+     color: white;
 }
-option[value="red"]{
+
+option[value="red"]:checked{
     background-color: #FF3636;
 }
-option[value="green"]{
+option[value="green"]:checked{
     background-color: #1C7A22;
 }
-option[value="blue"]{
+option[value="blue"]:checked{
     background-color: #282A7A;
 }
+
+
 option[value="red"]:hover{
     background-color: #FF3636;
 }
@@ -214,14 +222,18 @@ option[value="blue"]:hover{
     
 ul{
         margin-top: 1em;
-       
     }
+
+.drag{
+    cursor: move;
+}
 li{  display: flex;
         justify-content: space-between;
         width: 95%;
        margin:1em auto;
        padding: 1em;
        border-radius: 10px;
+      
     }
 li p {
         display:flex;
@@ -263,3 +275,4 @@ aside{
     background-color: rgb(108, 195, 108);
     border-radius: 10px;
 }
+
