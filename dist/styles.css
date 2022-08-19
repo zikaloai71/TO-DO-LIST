@@ -224,8 +224,11 @@ ul{
         margin-top: 1em;
     }
 
-.drag{
+.lists{
     cursor: move;
+}
+.lists.dragging{
+    opacity: 0.5;
 }
 li{  display: flex;
         justify-content: space-between;

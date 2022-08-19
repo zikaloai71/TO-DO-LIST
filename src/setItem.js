@@ -4,6 +4,7 @@ import { dueDate } from "./due-date";
 import { priority } from "./priority";
 
 let ul = document.createElement("ul");
+ul.classList.add('container');
 let body = document.getElementsByTagName("body")[0];
 body.appendChild(ul);
 
@@ -22,12 +23,9 @@ function setItem() {
 }
 
 function createItem(list) {
-  let div = document.createElement("div");
   let li = document.createElement("li");
-  ul.appendChild(div);
-  div.setAttribute("draggable", "true");
-  div.classList.add("drag");
-  div.appendChild(li);
+  li.setAttribute("draggable", "true");
+  ul.appendChild(li);
   li.classList.add("lists");
   li.innerHTML += `<p> <span>title :  ${list.title}</span>
     <span> description :  ${list.description}</span>
