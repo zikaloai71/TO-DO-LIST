@@ -1,9 +1,9 @@
-import { deleteItem } from "./deleteItem";
-import { completeItem } from "./completeItem";
-import { setItem, createItem } from "./setItem";
-import { dueDate } from "./due-date";
-import { editPriority } from "./editPriority";
-import { dragAndDrop } from "./draganddrop";
+import { deleteItem } from "./deleteItem.js";
+import { completeItem } from "./completeItem.js";
+import { setItem, createItem } from "./setItem.js";
+import { dueDate } from "./due-date.js";
+import { editPriority } from "./editPriority.js";
+import { dragAndDrop } from "./draganddrop.js";
 
 const submit = document.getElementById("submit");
 const addToDo = document.getElementById("todo");
@@ -19,14 +19,27 @@ addToDo.addEventListener("click", () => {
   }
 });
 
+let toDos = JSON.parse(localStorage.getItem("toDos"));
+if(toDos){
+  for(let i = 0; i < toDos.length; i++){
+    createItem(toDos[i]);
+    dragAndDrop();
+    deleteItem(toDos[i].id);
+    completeItem();
+    editPriority(toDos[i], toDos[i].id);
+  }
+}
+
 submit.addEventListener("click", (e) => {
   e.preventDefault();
   let set = setItem();
-  createItem(set);
-  dragAndDrop();
-  deleteItem();
-  completeItem();
-  editPriority(set);
+  if(set){
+    createItem(set);
+    dragAndDrop();
+    deleteItem(set.id);
+    completeItem();
+    editPriority(set , set.id);
+  }
 });
 
 

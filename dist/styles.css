@@ -7,13 +7,15 @@
 .head{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
     padding: 2em 2em 0.5em 2em;
     background: rgb(63,94,251);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 .first-part{
    animation: a-motion 3s linear 1s 1 normal forwards; 
+    width: 30%;
    color: white;
    font-weight: bold;
    font-family: 'Dancing Script', cursive;
@@ -22,10 +24,12 @@
   font-family: 'Roboto Serif', serif;
   font-family: 'Square Peg', cursive;
  font-size: 4rem;
+ text-align: center;
    
 }
 .second-part{
     animation: two-motion 3s linear 1s 1 normal forwards; 
+    width: 30%;
     color: white;
     font-weight: bold;
     font-family: 'Dancing Script', cursive;
@@ -35,10 +39,11 @@ font-family: 'Roboto Serif', serif;
 font-family: 'Square Peg', cursive;
     font-size: 4rem;
 
-  
+    text-align: center;
  }
  .third-part{
     animation: z-motion 3s linear 1s 1 normal forwards; 
+    width: 30%;
     color: white;
     font-weight: bold;
     font-family: 'Dancing Script', cursive;
@@ -47,7 +52,7 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Serif', serif;
 font-family: 'Square Peg', cursive;
     font-size: 4rem;
-   
+    text-align: center;
  }
  
 
@@ -57,7 +62,7 @@ font-family: 'Square Peg', cursive;
     }
 
     100%{
-        transform: translateX(680px);
+        transform: translateX(90%);
     }   
 }
 @keyframes two-motion {
@@ -75,7 +80,7 @@ font-family: 'Square Peg', cursive;
     }
 
     100%{
-        transform: translateX(-680px);
+        transform: translateX(-90%);
     }   
 }
 .descrip{
@@ -278,4 +283,19 @@ aside{
     background-color: rgb(108, 195, 108);
     border-radius: 10px;
 }
-
+@media only screen and (max-width: 991px){
+    #todo-form{
+        width: 100%;
+    }
+    #submit{
+        width: 50%;
+        margin:0.4em auto;
+    }
+  .form-part{
+      display: block;
+  }
+    img{
+     
+   display: none;
+    }
+}

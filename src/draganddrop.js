@@ -34,6 +34,7 @@
 // function handleDragEnd(e) {
 //   this.style.opacity = "1";
 // }
+import { toDos } from "./setItem.js";
 
 function dragAndDrop() {
   let lists = [...document.querySelectorAll(".lists")];
@@ -41,6 +42,7 @@ function dragAndDrop() {
     list.addEventListener("dragstart", ()=>{
       list.classList.add('dragging');
     });
+
     // list.addEventListener("dragover", handleDragOver);
     // list.addEventListener("drop", handleDrop);
     list.addEventListener("dragend", ()=>{
@@ -56,13 +58,17 @@ function dragAndDrop() {
       container.appendChild(draggable)
     } else {
       container.insertBefore(draggable, afterElement)
+      
     }
   })
+
+
 }
 
 function getDragAfterElement(container, y) {
   const draggableElements = [...container.querySelectorAll('.lists:not(.dragging)')]
-
+  
+  
   return draggableElements.reduce((closest, child) => {
     const box = child.getBoundingClientRect();
     const offset = y - box.top - box.height / 2;
